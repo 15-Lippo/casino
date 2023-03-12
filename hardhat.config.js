@@ -17,7 +17,9 @@ module.exports = {
       url: "http://127.0.0.1:7545"
     },
     polygon: {
-      url: "https://rpc-mumbai.maticvigil.com/v1/99a99d15ac2ad3b526aa97401fdbe30ee724ba38",
+      url: "https://polygon-mainnet.g.alchemy.com/v2/S-7W-EuKWAo_ksZu7lx0Rn0ySh0pM3kC",
+      chainId: 137,
+      gasPrice: 20000000000,
       accounts: [privateKey]
     },
     bsc: {
