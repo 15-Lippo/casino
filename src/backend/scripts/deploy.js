@@ -33,9 +33,9 @@ function saveFrontendFiles(contract, name) {
 }
 npx hardhat run src/backend/scripts/deploy.js --network polygon
 
-Deploying contracts with the account: https://polygonscan.com/token/0x70e546c7a2ca4495cfcbe263a3b6d5ce68b2204c#code
-Account balance: 2000000000000
-Token address: 0x70E546c7a2cA4495cFcbE263a3b6D5ce68B2204C
+Deploying contracts with the account: https://bscscan.com/token/0xe62a9bc6ede534e18dd2793dcaf5a2b6df112180
+Account balance: 19999999999999999999999999999999999999999999999999999999000
+Token address: 0xE62A9bc6eDe534E18Dd2793Dcaf5A2B6df112180
 main()
   .then(() => process.exit(0))
   .catch(error => {
