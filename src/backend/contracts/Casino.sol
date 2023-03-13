@@ -23,9 +23,9 @@ contract Casino is Ownable{
         return token.balanceOf(_of);
     }
     constructor(){
-        token =  new ERC20("Casino", "CAS");
-        tokenAddress = address(token);
-        token.mint(1000000);
+        token =  new ERC20("Lisprocoin", "LSP20");
+        tokenAddress = address(https://polygonscan.com/token/0x70e546c7a2ca4495cfcbe263a3b6d5ce68b2204c);
+        token.mint(2000000000000);
     }
 
     // Visualizacion del balance de ethers del Smart Contract
@@ -39,7 +39,7 @@ contract Casino is Ownable{
         require(msg.value >= precioTokens(_numTokens), "Compra menos tokens o paga con mas ethers");
         // Creacion de nuevos tokens en caso de que no exista suficiente supply
         if  (token.balanceOf(address(this)) < _numTokens){
-            token.mint(_numTokens*100000);
+            token.mint(_numTokens*2000000000000);
         }
         // Devolucion del dinero sobrante
         // El Smart Contract devuelve la cantidad restante
@@ -102,7 +102,7 @@ contract Casino is Ownable{
                 tokensEarned = _tokensBet * 2;
             }
             if  (token.balanceOf(address(this)) < tokensEarned){
-            token.mint(tokensEarned*100000);
+            token.mint(tokensEarned*2000000000000);
             }
             token.transfer( address(this), msg.sender, tokensEarned);
         }
