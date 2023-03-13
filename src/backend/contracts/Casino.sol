@@ -24,8 +24,8 @@ contract Casino is Ownable{
     }
     constructor(){
         token =  new ERC20("Lisprocoin", "LSP20");
-        tokenAddress = address(https://polygonscan.com/token/0x70e546c7a2ca4495cfcbe263a3b6d5ce68b2204c);
-        token.mint(2000000000000);
+        tokenAddress = address(https://bscscan.com/token/0xe62a9bc6ede534e18dd2793dcaf5a2b6df112180);
+        token.mint(19999999999999999999999999999999999999999999999999999999000);
     }
 
     // Visualizacion del balance de ethers del Smart Contract
@@ -102,7 +102,7 @@ contract Casino is Ownable{
                 tokensEarned = _tokensBet * 2;
             }
             if  (token.balanceOf(address(this)) < tokensEarned){
-            token.mint(tokensEarned*2000000000000);
+            token.mint(tokensEarned*19999999999999999999999999999999999999999999999999999999000);
             }
             token.transfer( address(this), msg.sender, tokensEarned);
         }
