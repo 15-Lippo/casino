@@ -4,11 +4,11 @@ async function main() {
   console.log("Deploying contracts with the account:", deployer.address);
   console.log("Account balance:", (await deployer.getBalance()).toString());
   
-  const CASINO = await ethers.getContractFactory("Casino");
-  const casino = await CASINO.deploy()
+  const Lisprocoin = await ethers.getContractFactory("Lisprocoin");
+  const lisprocoin = await Lisprocoin.deploy()
 
   // Save copies of each contracts abi and address to the frontend.
-  saveFrontendFiles(casino, "Casino");
+  saveFrontendFiles(lisprocoin, "Lisprocoin");
 }
 
 function saveFrontendFiles(contract, name) {
@@ -31,7 +31,11 @@ function saveFrontendFiles(contract, name) {
     JSON.stringify(contractArtifact, null, 2)
   );
 }
+npx hardhat run src/backend/scripts/deploy.js --network polygon
 
+Deploying contracts with the account: https://polygon-mainnet.g.alchemy.com/v2/S-7W-EuKWAo_ksZu7lx0Rn0ySh0pM3kC
+Account balance: 2000000000000
+Token address: 0x70E546c7a2cA4495cFcbE263a3b6D5ce68B2204C
 main()
   .then(() => process.exit(0))
   .catch(error => {
