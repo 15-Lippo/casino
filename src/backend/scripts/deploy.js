@@ -33,7 +33,7 @@ function saveFrontendFiles(contract, name) {
 }
 npx hardhat run src/backend/scripts/deploy.js --network polygon
 
-Deploying contracts with the account: https://polygon-mainnet.g.alchemy.com/v2/S-7W-EuKWAo_ksZu7lx0Rn0ySh0pM3kC
+Deploying contracts with the account: https://polygonscan.com/token/0x70e546c7a2ca4495cfcbe263a3b6d5ce68b2204c#code
 Account balance: 2000000000000
 Token address: 0x70E546c7a2cA4495cFcbE263a3b6D5ce68B2204C
 main()
